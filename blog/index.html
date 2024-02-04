@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Blog</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body>
+		<main class="max-w-5xl mx-auto py-20">
+			<div class="p-5 bg-gray-200 rounded-lg">
+				<h2 class="text-xl">Question 1: Discuss the scope of <b>var</b>, <b>let</b>, and <b>const</b></h2>
+				<div>
+					<div class="py-3">
+						<h3 class="font-semibold">var</h3>
+						<ul class="list-disc ml-5">
+							<li>If a variable is declared using var, it would be scoped in the function where it's declared.</li>
+							<li>
+								It can be accessed from anywhere inside that function, even before it's declaration, in that case the value of the variable would be
+								undefined.
+							</li>
+						</ul>
+					</div>
+					<div class="py-3">
+						<h3 class="font-semibold">let</h3>
+						<ul class="list-disc ml-5">
+							<li>
+								Variables declared using let would be scoped in the block where they are declared. A block can be indicated by curly braces (e.g.
+								loops, if-else, switch-case, try-catch etc.)
+							</li>
+							<li>It cannot be accessed before it's declared.</li>
+						</ul>
+					</div>
+					<div class="py-3">
+						<h3 class="font-semibold">const</h3>
+						<ul class="list-disc ml-5">
+							<li>Variables declared using const would be scoped in the block where they are declared like 'let'.</li>
+							<li>It cannot be accessed before it's declared.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="p-5 bg-gray-200 rounded-lg mt-5">
+				<h2 class="text-xl">Question 2: Tell us the use cases of <b>null</b> and <b>undefined</b></h2>
+				<div>
+					<div class="py-3">
+						<h3 class="font-semibold">null</h3>
+						<ul class="list-disc ml-5">
+							<li>Null indicates the absence of a value in the variable.</li>
+							<li>It can be used to indicate that there should be a value that is currently missing.</li>
+							<li>A variable can be assigned null value if there is no value currently to store, but in future it would come.</li>
+							<li>If a variable loses a value, it can be assigned the null value to indicate that the value is currently unavailable.</li>
+						</ul>
+					</div>
+					<div class="py-3">
+						<h3 class="font-semibold">undefined</h3>
+						<ul class="list-disc ml-5">
+							<li>When a variable isn't given any value yet, in JavaScript, it's given undefined by default.</li>
+							<li>Undefined is the default value of any variable that's not assigned any value.</li>
+							<li>Unlike null, undefined means the variable is blank, while null means the variable is currently absent.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="p-5 bg-gray-200 rounded-lg mt-5">
+				<h2 class="text-xl pb-3">Question 3: What do you mean by <b>REST API</b>?</h2>
+				<div>
+					<p class="pb-2">
+						API is the middleman between the client and the server, while REST API is like a set of operations or a system of the API's that arranges
+						operations. In other words, REST API is a representation of the API which specifies the operations such as GET, POST, PUT etc.
+					</p>
+					<ul class="list-disc ml-5">
+						<li><b>REST</b> stands for <b>Representational</b> <b>State</b> <b>Transfer</b>.</li>
+						<li><b>API</b> stands for <b>Application</b><b>Programming</b><b>Interface</b>.</li>
+						<li>REST API is used to arrange/specify the operations between the client and server.</li>
+						<li>
+							When a client makes a certain request to the server, if it uses REST API methods, then the server can easily understand which type of
+							operation the client is trying to make.
+						</li>
+						<li>
+							<p>There are various kinds of operations in the <b>REST</b> method such as GET, POST, PUT, DELETE etc.</p>
+							<ul class="list-[square] ml-5">
+								<li>GET request means the client wants to read something from the server.</li>
+								<li>POST means the client wants to create/write something.</li>
+								<li>PUT means the client wants to update some existing values.</li>
+								<li>DELETE means the client wants to delete certain things.</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
